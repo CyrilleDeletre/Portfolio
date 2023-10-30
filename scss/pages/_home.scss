@@ -26,28 +26,24 @@
     }
 }
 
-article {
+.latest-work{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     figure {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        a{
-            text-align: center;
-            img{
+        text-align: center;
+        img{
             max-width:80%;
             }
-        } 
     }
 }
 
 @media screen and (min-width: 1024px) {
-    article {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+    .latest-work {
         figure{
             max-width: 25%;
         }
     }
-  }
+}

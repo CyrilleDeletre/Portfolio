@@ -234,26 +234,22 @@ header ul :first-child li {
   color: #FFFFFF;
 }
 
-article figure {
+.latest-work {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-article figure a {
+.latest-work figure {
   text-align: center;
 }
-article figure a img {
+.latest-work figure img {
   max-width: 80%;
 }
 
 @media screen and (min-width: 1024px) {
-  article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-  article figure {
+  .latest-work figure {
     max-width: 25%;
   }
 }/*# sourceMappingURL=main.css.map */
