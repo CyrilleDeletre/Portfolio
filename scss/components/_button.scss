@@ -1,0 +1,44 @@
+.burger-button {
+    background-color: $button;
+    border: $buttonBorder;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin: 8px;
+    padding: 0;
+    transition: transform 1s ease;
+    
+    .burger-button-bar {
+        display: block;
+        height: 4px;
+        margin: 8px;
+        background-color: $buttonText;
+        border-radius: 2px;
+        transition: transform 1s ease;
+    }
+}
+
+.burger-button.active .burger-button-bar:nth-child(1) {
+    transform: rotate(45deg) translate(12px, 5px);
+}
+  
+.burger-button.active .burger-button-bar:nth-child(2) {
+    transform: scale(0);
+}
+  
+.burger-button.active .burger-button-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(12px, -5px);
+}
+
+.burger-button.active + header-navbar{
+    display: block;
+}
+
+
+@media screen and (min-width: 1024px) 
+{
+    button{
+        display: none;
+    }
+}
+

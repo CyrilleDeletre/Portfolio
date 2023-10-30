@@ -1,0 +1,32 @@
+// Base colors
+
+$black: #000000;
+$darkestGray: #111111;
+$darkerGray: #222222;
+$darkGray: #333333;
+$gray:#757575;
+$lightGray:#F5F5F5;
+$lighterGray:#FAFAFA;
+$white:#FFFFFF;
+
+// Elements colors
+
+    //text
+        $title:$darkGray;
+        $text:$gray;
+        $darkBackgroundText:$white;
+        $lightBackgroundText:$darkGray;
+
+    //background
+        $lightBackground:$lightGray;
+        $darkBackground:$darkestGray;
+        $navbar:$darkerGray;
+
+    //button 
+        $button:$darkBackground;
+        $buttonBorder:$darkBackground;
+        $buttonText:$darkBackgroundText;
+        
+
+    //hover
+        $hoverText:$gray;

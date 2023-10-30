@@ -1,0 +1,53 @@
+.full-stack{
+    h1{
+        width: 100%;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    section{
+        width: 50%;
+    }
+}
+
+.full-stack section{
+    p{
+        color: $lightBackgroundText;
+    }
+}
+
+.full-stack section:last-child {
+    background-color: $darkBackground;
+    h2{
+        color:$darkBackgroundText;
+    }
+    p{
+        color:$darkBackgroundText;
+    }
+}
+
+article {
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        a{
+            text-align: center;
+            img{
+            max-width:80%;
+            }
+        } 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        figure{
+            max-width: 25%;
+        }
+    }
+  }

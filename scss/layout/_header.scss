@@ -1,0 +1,70 @@
+header 
+{
+  background-color: $darkBackground;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  figure
+  {
+    a{
+      display: block;
+      padding: 8px 12px;
+      img
+      {
+        width: 40px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  nav
+  {
+    display: none;
+    background-color: $navbar;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  ul
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    li
+    {
+      width: 100%;
+      border-bottom: 2px solid $darkGray;
+      a
+      {
+        width: 100%;
+        color: $darkBackgroundText;
+      }
+
+      a:hover
+      {
+        color: $hoverText;
+      }
+    }
+  }
+  ul :first-child{
+    flex-direction: row;
+    li{
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+#burger-button.active + .header-navbar {
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  button{
+      display: none;
+  }
+}
