@@ -17,16 +17,16 @@
 
 <body>
     <header>
-        <figure>
-            <a href="index.html"><img src="img/logoCD.png" alt="Logo du portfolio"></a>
-        </figure>
-        <button id="burger-button" class="burger-button">
-            <div class="burger-button-bar"></div>
-            <div class="burger-button-bar"></div>
-            <div class="burger-button-bar"></div>
-        </button>
-        <nav class="header-navbar">
-            <ul>
+        <nav>
+            <figure>
+                <a href="index.html"><img src="img/logoCD.png" alt="Logo du portfolio"></a>
+            </figure>
+            <button id="burger-button" class="burger-button">
+                <div class="burger-button-bar"></div>
+                <div class="burger-button-bar"></div>
+                <div class="burger-button-bar"></div>
+            </button>
+            <ul id="header-navbar" class="header-navbar">
                 <li>
                     <a href="index.html">home</a>
                 </li>
@@ -42,7 +42,8 @@
                 <li>
                     <ul>
                         <li>
-                            <a href="https://www.linkedin.com/in/cyrille-deletre/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/cyrille-deletre/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
                         </li>
                         <li>
                             <a href="https://github.com/CyrilleDeletre"><i class="fa-brands fa-github"></i></a>
@@ -54,19 +55,20 @@
                 </li>
             </ul>
         </nav>
+        <article>
+            <h1>Full stack developer </h1>
+            <section>
+                <h2>Front-end</h2>
+                <p>Developer who focuses on creating the user interface and user experience of a website
+                    application.</p>
+            </section>
+            <section>
+                <h2>Back-end</h2>
+                <p>Developer who focuses on creating the server-side logic and infrastructure of web applications.</p>
+            </section>
+        </article>
     </header>
-    <article class="full-stack">
-        <h1>Full stack developer </h1>
-        <section>
-            <h2>Front-end</h2>
-            <p>Developer who focuses on creating the user interface and user experience of a website
-                application.</p>
-        </section>
-        <section>
-            <h2>Back-end</h2>
-            <p>Developer who focuses on creating the server-side logic and infrastructure of web applications</p>
-        </section>
-    </article>
+
     <article class="latest-work">
         <h2>My latest work</h2>
 
@@ -90,6 +92,7 @@
             <figcaption>Project Squedrong</figcaption>
         </figure>
     </article>
+
     <footer>
         <div>
             <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
@@ -112,6 +115,6 @@
             </ul>
         </nav>
     </footer>
-</body>
+</body> 
 
 </html>

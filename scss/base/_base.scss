@@ -12,6 +12,11 @@
         color: $text;
     }
 
+    //article
+    article:nth-child(odd) {
+        background-color: $lightBackground;
+    }
+
 
 //Font-size & font-weight
 
@@ -53,14 +58,18 @@
 
     //text 
 
-    p, h4, li, a, label, input, textarea, dfn, figcaption{
+    p, h4, li, label, input, textarea, dfn, figcaption{
         padding: 1.25rem;
+    }
+
+    a{
+        padding: 8px;
     }
 
 //Alignment
 
     //title 
-    h1, h2, h3, figcaption{
+    h1, h2, h3, figcaption, li{
         text-align: center;
     }
 

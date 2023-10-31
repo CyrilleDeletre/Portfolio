@@ -5,8 +5,9 @@ $darkestGray: #111111;
 $darkerGray: #222222;
 $darkGray: #333333;
 $gray:#757575;
-$lightGray:#F5F5F5;
-$lighterGray:#FAFAFA;
+$lightGray:#cacaca;
+$lighterGray:#F5F5F5;
+$lightestGray:#FAFAFA;
 $white:#FFFFFF;
 
 // Elements colors
@@ -18,15 +19,18 @@ $white:#FFFFFF;
         $lightBackgroundText:$darkGray;
 
     //background
-        $lightBackground:$lightGray;
+        $footerBackground:$lighterGray;
+        $lightBackground:$lightestGray;
         $darkBackground:$darkestGray;
-        $navbar:$darkerGray;
+        $header-navbar:$darkerGray;
+        $darkBackgroundBorder:$darkGray;
+        $boxShadow:$lightGray;
 
     //button 
         $button:$darkBackground;
         $buttonBorder:$darkBackground;
         $buttonText:$darkBackgroundText;
-        
-
+    
     //hover
-        $hoverText:$gray;
+        $hoverlightText:$gray;
+        $hoverText:$darkGray;

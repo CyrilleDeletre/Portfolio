@@ -6,21 +6,21 @@
 @import "./base/fonts";
 @import "./base/base";
 
-//layout = re-usable elements (header, footer, form, etc...)
-@import "./layout/article";
-@import "./layout/footer";
-@import "./layout/form";
-@import "./layout/header";
-
 //components = re-usable elements smaller than layout (button, inputs, icons, etc...)
-@import "./components/button";
+@import "./components/buttons";
 @import "./components/inputs";
 
+//layout = re-usable elements (header, footer, form, etc...)
+@import "./layout/nav";
+@import "./layout/header";
+@import "./layout/form";
+@import "./layout/footer";
+
 //pages = style for pages which is not global style
-@import "./pages/about";
-@import "./pages/contact";
 @import "./pages/home";
+@import "./pages/about";
 @import "./pages/projects";
+@import "./pages/contact";
 
 //themes = themes styles (holliday, admin, etc..)
 

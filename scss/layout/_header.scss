@@ -1,70 +1,100 @@
-header 
-{
-  background-color: $darkBackground;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-  figure
-  {
-    a{
+header {
+  nav {
+    background-color: $darkBackground;
+    justify-content: space-between;
+
+    #burger-button.active + .header-navbar {
       display: block;
-      padding: 8px 12px;
-      img
-      {
-        width: 40px;
-        border-radius: 50%;
+    }
+
+    figure {
+      a {
+        display: block;
+        padding: 8px 12px;
+        img {
+          width: 40px;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .header-navbar {
+      background-color: $header-navbar;
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      display: none;
+      transition: opacity s;
+      li {
+        border-bottom: 2px solid $darkBackgroundBorder;
+        a {
+          width: 100%;
+          color: $darkBackgroundText;
+        }
+
+        a:hover {
+          color: $hoverlightText;
+        }
+        ul {
+          justify-content: space-evenly;
+          flex-direction: row;
+
+          li {
+            border: none;
+            padding: 0;
+          }
+        }
       }
     }
   }
 
-  nav
-  {
-    display: none;
-    background-color: $navbar;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    text-align: center;
-  }
-
-
-  ul
-  {
+  article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    li
-    {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    h1 {
       width: 100%;
-      border-bottom: 2px solid $darkGray;
-      a
-      {
-        width: 100%;
+    }
+
+    section {
+      width: 50%;
+      box-shadow: 0 1px 4px 0px $boxShadow;
+
+      p {
+        color: $lightBackgroundText;
+      }
+    }
+
+    section:last-child {
+      box-shadow: 0 1px 4px 0px $boxShadow;
+      background-color: $darkBackground;
+
+      h2 {
         color: $darkBackgroundText;
       }
 
-      a:hover
-      {
-        color: $hoverText;
+      p {
+        color: $darkBackgroundText;
       }
     }
   }
-  ul :first-child{
-    flex-direction: row;
-    li{
-      border: none;
-      padding: 0;
-    }
-  }
-}
-
-#burger-button.active + .header-navbar {
-  display: block;
 }
 
 @media screen and (min-width: 1024px) {
-  button{
-      display: none;
+  header {
+    nav {
+      .header-navbar {
+        background-color: $darkBackground;
+        display: flex;
+        position: static;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          border-bottom: none;
+          width: auto;
+        }
+      }
+    }
   }
 }

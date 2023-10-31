@@ -1,49 +1,40 @@
-.full-stack{
-    h1{
-        width: 100%;
+.latest-work {
+  padding-bottom: 20px;
+  background-color: $lightBackground;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  figure {
+    margin-bottom: 20px;
+    padding-top: 15px;
+    max-width: 80%;
+    background-color: $white;
+    text-align: center;
+    box-shadow: 0 0px 4px 0px $boxShadow;
+    border-radius: 4px;
+    img {
+      border-radius: 4px;
+      background-color: $lightBackground;
+      padding: 20px;
+      max-width: 75%;
     }
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    section{
-        width: 50%;
-    }
+  }
 }
 
-.full-stack section{
-    p{
-        color: $lightBackgroundText;
-    }
-}
-
-.full-stack section:last-child {
-    background-color: $darkBackground;
-    h2{
-        color:$darkBackgroundText;
-    }
-    p{
-        color:$darkBackgroundText;
-    }
-}
-
-.latest-work{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+@media screen and (min-width: 768px) {
+  .latest-work {
+    justify-content: space-around;
     figure {
-        text-align: center;
-        img{
-            max-width:80%;
-            }
+      max-width: 40%;
     }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .latest-work {
-        figure{
-            max-width: 25%;
-        }
+  .latest-work {
+    justify-content: space-around;
+    figure {
+        max-width: 20%;
     }
+  }
 }

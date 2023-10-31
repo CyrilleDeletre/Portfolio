@@ -30,10 +30,9 @@
     transform: rotate(-45deg) translate(12px, -5px);
 }
 
-.burger-button.active + header-navbar{
+.burger-button.active + .header-navbar{
     display: block;
 }
-
 
 @media screen and (min-width: 1024px) 
 {
