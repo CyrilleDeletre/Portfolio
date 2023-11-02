@@ -113,10 +113,6 @@ h1, h2, h3, figcaption, li {
   text-align: center;
 }
 
-p {
-  text-align: justify;
-}
-
 .burger-button {
   background-color: #111111;
   border: #111111;
@@ -190,7 +186,8 @@ header nav .header-navbar {
   top: 60px;
   width: 100%;
   display: none;
-  transition: opacity s;
+  transition: opacity 1s;
+  z-index: 100;
 }
 header nav .header-navbar li {
   border-bottom: 2px solid #333333;
@@ -233,7 +230,47 @@ header article section:last-child h2 {
   color: #FFFFFF;
 }
 header article section:last-child p {
+  text-align: end;
   color: #FFFFFF;
+}
+header .header-animation {
+  position: relative;
+}
+header .header-animation h2 {
+  font-size: 1.5rem;
+  padding: 1 0rem;
+}
+header .header-animation p {
+  font-size: 0.75rem;
+  padding: 0.75rem;
+  justify-content: center;
+}
+header .front-end {
+  background-color: white;
+  position: absolute;
+  top: 128px;
+  width: 50%;
+  height: 175px;
+  left: 0;
+  transition: ease-in-out 2s;
+  z-index: 2;
+}
+header .front-end:hover {
+  z-index: 50;
+  width: 100%;
+}
+header .back-end {
+  position: absolute;
+  top: 128px;
+  width: 50%;
+  height: 175px;
+  right: 0;
+  transition: ease-in-out 2s;
+  z-index: 2;
+}
+header .back-end:hover {
+  z-index: 3;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -247,6 +284,24 @@ header article section:last-child p {
   header nav .header-navbar li {
     border-bottom: none;
     width: auto;
+  }
+  .front-end {
+    top: 96px !important;
+  }
+  .front-end p {
+    font-size: 1.25rem !important;
+  }
+  .front-end:hover p {
+    text-align: center;
+  }
+  .back-end {
+    top: 96px !important;
+  }
+  .back-end p {
+    font-size: 1.25rem !important;
+  }
+  .back-end:hover p {
+    text-align: center;
   }
 }
 footer {
@@ -281,7 +336,7 @@ footer p {
 }
 footer nav {
   position: relative;
-  bottom: 60px;
+  bottom: 65px;
   justify-content: center;
 }
 footer nav ul {
@@ -308,6 +363,7 @@ footer nav ul li a:hover {
   }
 }
 .latest-work {
+  margin-top: 175px;
   padding-bottom: 20px;
   background-color: #FAFAFA;
   display: flex;
@@ -322,12 +378,22 @@ footer nav ul li a:hover {
   text-align: center;
   box-shadow: 0 0px 4px 0px #cacaca;
   border-radius: 4px;
+  transition: ease-in-out 1s;
 }
 .latest-work figure img {
   border-radius: 4px;
   background-color: #FAFAFA;
   padding: 20px;
   max-width: 75%;
+}
+.latest-work figure:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.latest-work figure:hover img {
+  opacity: 0.75;
+}
+.latest-work figure:hover figcaption {
+  color: #333333;
 }
 
 @media screen and (min-width: 768px) {
@@ -344,5 +410,96 @@ footer nav ul li a:hover {
   }
   .latest-work figure {
     max-width: 20%;
+  }
+}
+.about article {
+  padding: 0 20px;
+  text-align: center;
+  box-shadow: 0 0px 4px 0px #cacaca;
+}
+.about figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+.about figure img {
+  max-width: 60px;
+}
+.about article:nth-child(n+4) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about article:last-of-type {
+  padding-bottom: 20px;
+}
+.about section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about section h3 {
+  width: 100%;
+}
+.about section div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.about section div figure {
+  border-radius: 4px;
+}
+.about section div figure figcaption {
+  min-height: 50px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .about figure {
+    width: 20%;
+  }
+  .about figure img {
+    max-width: 60px;
+  }
+  .about section div {
+    gap: 200px;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+  .about section div figure {
+    min-height: 250px;
+  }
+  .about section div figure figcaption {
+    font-size: 1.25rem;
+  }
+}
+.projects article {
+  width: 100%;
+}
+.projects section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects section img {
+  padding: 0 10px;
+  max-width: 300px;
+}
+.projects section:nth-child(odd) {
+  background-color: #FAFAFA;
+}
+
+@media screen and (min-width: 1024px) {
+  img {
+    padding: 0 !important;
+    max-width: 100% !important;
   }
 }/*# sourceMappingURL=main.css.map */

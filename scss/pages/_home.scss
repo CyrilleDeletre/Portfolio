@@ -1,4 +1,5 @@
 .latest-work {
+  margin-top: 175px;
   padding-bottom: 20px;
   background-color: $lightBackground;
   display: flex;
@@ -12,11 +13,21 @@
     text-align: center;
     box-shadow: 0 0px 4px 0px $boxShadow;
     border-radius: 4px;
+    transition: ease-in-out 1s;
     img {
       border-radius: 4px;
       background-color: $lightBackground;
       padding: 20px;
       max-width: 75%;
+    }
+  }
+  figure:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    img{
+      opacity: 0.75;
+    }
+    figcaption{
+      color: $hoverText;
     }
   }
 }

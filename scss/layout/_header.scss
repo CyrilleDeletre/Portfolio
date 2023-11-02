@@ -24,7 +24,8 @@ header {
       top: 60px;
       width: 100%;
       display: none;
-      transition: opacity s;
+      transition: opacity 1s;
+      z-index: 100;
       li {
         border-bottom: 2px solid $darkBackgroundBorder;
         a {
@@ -75,9 +76,52 @@ header {
       }
 
       p {
+        text-align: end;
         color: $darkBackgroundText;
       }
     }
+  }
+  .header-animation{
+    position: relative;
+    h2{
+      font-size: 1.5rem;
+      padding: 1 0rem;
+    }
+    p{
+      font-size: 0.75rem;
+      padding: 0.75rem;
+      justify-content: center;
+    }
+  }
+
+  .front-end{
+    background-color: white;
+    position: absolute;
+    top: 128px;
+    width: 50%;
+    height: 175px;
+    left: 0;
+    transition: ease-in-out 2s;
+    z-index: 2;
+  }
+  .front-end:hover{
+    z-index: 50;
+    width: 100%;
+  }
+  
+  .back-end{
+    position: absolute;
+    top: 128px;
+    width: 50%;
+    height: 175px;
+    right: 0;
+    transition: ease-in-out 2s;
+    z-index: 2;
+  }
+
+  .back-end:hover{
+    z-index: 3;
+    width: 100%;
   }
 }
 
@@ -95,6 +139,29 @@ header {
           width: auto;
         }
       }
+    }
+  }
+  .front-end{
+    top:96px !important;
+    p{
+      font-size: 1.25rem !important;
+    }
+  }
+  .front-end:hover{
+    p{
+      text-align: center;
+    }
+  }
+
+  .back-end{
+    top: 96px !important;
+    p{
+      font-size: 1.25rem !important;
+    }
+  }
+  .back-end:hover{
+    p{
+      text-align: center;
     }
   }
 }

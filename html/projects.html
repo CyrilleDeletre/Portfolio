@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="/scss/main.css">
+    <script src="https://kit.fontawesome.com/f08ff40088.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="/script/burgerButton.js" defer></script>
 </head>
+
 <body>
-    
-</body>
+    <header>
+        <nav>
+            <figure>
+                <a href="/index.html"><img src="/img/logoCD.png" alt="Logo du portfolio"></a>
+            </figure>
+            <button id="burger-button" class="burger-button">
+                <div class="burger-button-bar"></div>
+                <div class="burger-button-bar"></div>
+                <div class="burger-button-bar"></div>
+            </button>
+            <ul id="header-navbar" class="header-navbar">
+                <li>
+                    <a href="/index.html">home</a>
+                </li>
+                <li>
+                    <a href="/html/about.html">about</a>
+                </li>
+                <li>
+                    <a href="/html/projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="/html/contact.html">contact</a>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cyrille-deletre/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/CyrilleDeletre"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://discord.com"><i class="fa-brands fa-discord"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article class="projects">
+        <h1>Projects</h1>
+        <section>
+            <h2>Education's projects</h2>
+            <p>with</p>
+            <img src="/img/afci.png" alt="AFCI"/>
+        </section>
+        <section>
+            <h2>Education's projects</h2>
+            <p>with</p>
+            <img src="/img/simplon.jpg" alt="Simplon" />
+            <article>
+                <h3 id='crazyQuiz'>Project Crazy Quiz</h3>
+                <img src="/img/crazyQuizFull.jpg" alt="Crazy Quiz" />
+            </article>
+            <article>
+                <h3 id='euroVelo5'>Project Euro velo 5</h3>
+                <img src="/img/euroVelo5Full.jpg" alt="Euro velo 5" />
+            </article>
+            <article>
+                <h3 id='ducsman'>Project Ducsman</h3>
+                <img src="/img/ducsmanFull.jpg" alt="Ducsman" />
+            </article>
+            <article>
+                <h3 id='squedrong'>Project Squedrong</h3>
+                <img src="/img/squedrongFull.jpg" alt="Squedrong" />
+            </article>
+        </section>
+    </article>
+
+    <footer>
+        <div>
+            <a href="#"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+        <nav>
+            <p>&copy; 2023 Cyrille Deletré </p>
+            <ul>
+                <li>
+                    <a href="/index.html">home</a>
+                </li>
+                <li>
+                    <a href="/html/about.html">about</a>
+                </li>
+                <li>
+                    <a href="/html/projects.html">projects</a>
+                </li>
+                <li>
+                    <a href="/html/contact.html">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body> 
+
 </html>
