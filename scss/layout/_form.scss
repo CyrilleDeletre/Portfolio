@@ -8,13 +8,17 @@ form{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        width: 60%;
+        width: 80%;
         input, textarea{
             color: $title;
             padding-left: 10px;
             border-radius: 4px;
             outline: none;
             border:$gray 1px solid;
+        }
+        label:hover{
+            color: $title;
+            cursor: pointer;
         }
         input:focus, textarea:focus{
             background-color: $lightGray;
@@ -31,7 +35,7 @@ form{
         justify-content: center;
         input{
             display: block;
-            padding: 20px;
+            padding: 10px 20px;
             max-width: fit-content !important;
         }
         
@@ -40,6 +44,14 @@ form{
         input{
             background-color: $gray;
             color: $buttonText;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    form{
+        div{
+
         }
     }
 }

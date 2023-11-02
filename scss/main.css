@@ -315,7 +315,7 @@ form div {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 60%;
+  width: 80%;
 }
 form div input, form div textarea {
   color: #333333;
@@ -323,6 +323,10 @@ form div input, form div textarea {
   border-radius: 4px;
   outline: none;
   border: #757575 1px solid;
+}
+form div label:hover {
+  color: #333333;
+  cursor: pointer;
 }
 form div input:focus, form div textarea:focus {
   background-color: #cacaca;
@@ -342,7 +346,7 @@ form .send {
 }
 form .send input {
   display: block;
-  padding: 20px;
+  padding: 10px 20px;
   max-width: -moz-fit-content !important;
   max-width: fit-content !important;
 }
@@ -385,6 +389,9 @@ footer nav {
   position: relative;
   bottom: 65px;
   justify-content: center;
+}
+footer nav p {
+  padding-left: 1.25rem;
 }
 footer nav ul {
   display: none;
@@ -529,6 +536,9 @@ footer nav ul li a:hover {
 }
 .projects article {
   width: 100%;
+}
+.projects article p {
+  text-align: center;
 }
 .projects section {
   display: flex;
