@@ -4,6 +4,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0px 4px 0px $boxShadow;
     div{
         display: flex;
         flex-direction: column;

@@ -1,21 +1,31 @@
 .projects {
     article{
         width: 100%;
+
         p{
             text-align: center;
         }
     }
     section{
+        box-shadow: 0 0px 4px 0px $boxShadow;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-bottom: 20px;
+        article{
+            box-shadow: 0 0px 4px 0px $boxShadow;
+        }
+        article:nth-child(even){
+            background-color: $lightBackground;
+        }
+
         img{
             padding: 0 10px;
             max-width: 300px;
         }
     }
-    section:nth-child(odd){
+    section:nth-child(even){
         background-color: $lightBackground;
     }
 }

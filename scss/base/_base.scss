@@ -14,6 +14,7 @@
 
     //article
     article:nth-child(odd) {
+        box-shadow: 0 0px 4px 0px $boxShadow;
         background-color: $lightBackground;
     }
 

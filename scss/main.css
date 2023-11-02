@@ -66,6 +66,7 @@ p, li, a, label, input, textarea, legend, figcaption {
 }
 
 article:nth-child(odd) {
+  box-shadow: 0 0px 4px 0px #cacaca;
   background-color: #FAFAFA;
 }
 
@@ -310,6 +311,7 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0px 4px 0px #cacaca;
 }
 form div {
   display: flex;
@@ -541,16 +543,24 @@ footer nav ul li a:hover {
   text-align: center;
 }
 .projects section {
+  box-shadow: 0 0px 4px 0px #cacaca;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
+}
+.projects section article {
+  box-shadow: 0 0px 4px 0px #cacaca;
+}
+.projects section article:nth-child(even) {
+  background-color: #FAFAFA;
 }
 .projects section img {
   padding: 0 10px;
   max-width: 300px;
 }
-.projects section:nth-child(odd) {
+.projects section:nth-child(even) {
   background-color: #FAFAFA;
 }
 
