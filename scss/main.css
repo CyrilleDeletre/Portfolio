@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-h1, h2, h3, p, h4, li, a, label, input, textarea, dfn, figcaption {
+h1, h2, h3, p, h4, li, a, label, input, textarea, legend, figcaption {
   font-family: "Poppins", sans-serif;
 }
 
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
 }
 
-p, li, a, label, input, textarea, dfn, figcaption {
+p, li, a, label, input, textarea, legend, figcaption {
   color: #757575;
 }
 
@@ -83,7 +83,7 @@ h3 {
   font-size: 1.5rem;
 }
 
-p, h4, li, a, label, input, textarea, dfn, figcaption {
+p, h4, li, a, label, input, textarea, legend, figcaption {
   font-size: 1.25rem;
 }
 
@@ -101,8 +101,8 @@ h3 {
   padding: 1.5rem 0;
 }
 
-p, h4, li, label, input, textarea, dfn, figcaption {
-  padding: 1.25rem;
+p, h4, li, label, input, textarea, legend, figcaption {
+  padding: 1.25rem 0;
 }
 
 a {
@@ -304,6 +304,53 @@ header .back-end:hover {
     text-align: center;
   }
 }
+form {
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+}
+form div input, form div textarea {
+  color: #333333;
+  padding-left: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: #757575 1px solid;
+}
+form div input:focus, form div textarea:focus {
+  background-color: #cacaca;
+}
+form div input::-moz-placeholder, form div textarea::-moz-placeholder {
+  color: #cacaca;
+}
+form div input::placeholder, form div textarea::placeholder {
+  color: #cacaca;
+}
+form .send {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+form .send input {
+  display: block;
+  padding: 20px;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+}
+form .send:hover input {
+  background-color: #757575;
+  color: #FFFFFF;
+}
+
 footer {
   position: relative;
   max-height: 80px;
