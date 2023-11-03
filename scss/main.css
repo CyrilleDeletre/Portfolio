@@ -551,6 +551,12 @@ footer nav ul li a:hover {
   .about section div figure figcaption {
     font-size: 1.25rem;
   }
+  .about .graphics {
+    width: 100%;
+  }
+  .about .graphics figure {
+    width: 20%;
+  }
 }
 .projects article {
   width: 100%;

@@ -54,7 +54,6 @@
   .about {
     figure {
       width: 30%;
-
       img {
         max-width: 200px;
       }
@@ -65,7 +64,7 @@
         margin-bottom: 50px;
         width: 60%;
         figure {
-          img{
+          img {
             min-width: 250px !important;
             height: 200px !important;
           }
@@ -73,6 +72,12 @@
             font-size: 1.25rem;
           }
         }
+      }
+    }
+    .graphics{
+      width: 100%;
+      figure{
+        width: 20%;
       }
     }
   }
