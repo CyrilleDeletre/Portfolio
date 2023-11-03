@@ -127,6 +127,7 @@ header {
 
 @media screen and (min-width: 1024px) {
   header {
+    margin-bottom: 61px;
     nav {
       .header-navbar {
         background-color: $darkBackground;
@@ -163,5 +164,8 @@ header {
     p{
       text-align: center;
     }
+  }
+  .header-animation{
+    margin-top: 61px;
   }
 }

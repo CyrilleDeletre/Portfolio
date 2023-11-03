@@ -166,6 +166,14 @@ nav ul li a {
   transition: ease-in-out 0.5s;
 }
 
+@media screen and (min-width: 1024px) {
+  .navbar {
+    top: -61px;
+    left: 0;
+    right: 0;
+    transition: top 1s;
+  }
+}
 header nav {
   background-color: #111111;
   justify-content: space-between;
@@ -275,6 +283,9 @@ header .back-end:hover {
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    margin-bottom: 61px;
+  }
   header nav .header-navbar {
     background-color: #111111;
     display: flex;
@@ -303,6 +314,9 @@ header .back-end:hover {
   }
   .back-end:hover p {
     text-align: center;
+  }
+  .header-animation {
+    margin-top: 61px;
   }
 }
 form {
@@ -529,8 +543,9 @@ footer nav ul li a:hover {
     margin-bottom: 50px;
     width: 60%;
   }
-  .about section div figure {
-    min-height: 250px;
+  .about section div figure img {
+    min-width: 250px !important;
+    height: 200px !important;
   }
   .about section div figure figcaption {
     font-size: 1.25rem;
@@ -548,7 +563,6 @@ footer nav ul li a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 20px;
 }
 .projects section article {
   box-shadow: 0 0px 4px 0px #cacaca;
@@ -563,9 +577,12 @@ footer nav ul li a:hover {
 .projects section:nth-child(even) {
   background-color: #FAFAFA;
 }
+.projects article:last-of-type {
+  padding-bottom: 20px;
+}
 
 @media screen and (min-width: 1024px) {
-  img {
+  .projects img {
     padding: 0 !important;
     max-width: 100% !important;
   }

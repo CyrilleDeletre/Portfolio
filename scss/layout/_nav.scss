@@ -13,5 +13,10 @@ nav {
 }
 
 @media screen and (min-width: 1024px) { 
-
+  .navbar {
+    top: -61px;
+    left: 0;
+    right: 0;
+    transition: top 1s;
+  }
 }

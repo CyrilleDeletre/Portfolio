@@ -12,7 +12,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 20px;
         article{
             box-shadow: 0 0px 4px 0px $boxShadow;
         }
@@ -28,11 +27,16 @@
     section:nth-child(even){
         background-color: $lightBackground;
     }
+    article:last-of-type{
+        padding-bottom: 20px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
+    .projects {
     img{
         padding: 0 !important;
         max-width: 100% !important;
     }
   }
+}
