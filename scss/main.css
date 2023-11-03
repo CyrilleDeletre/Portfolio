@@ -168,6 +168,7 @@ nav ul li a {
 
 @media screen and (min-width: 1024px) {
   .navbar {
+    position: fixed;
     top: -61px;
     left: 0;
     right: 0;
@@ -533,10 +534,10 @@ footer nav ul li a:hover {
 
 @media screen and (min-width: 1024px) {
   .about figure {
-    width: 20%;
+    width: 30%;
   }
   .about figure img {
-    max-width: 60px;
+    max-width: 200px;
   }
   .about section div {
     gap: 200px;
