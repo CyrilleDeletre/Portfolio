@@ -1,58 +1,55 @@
-form{
-    background-color: $lightBackground;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0px 4px 0px $boxShadow;
-    div{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        width: 80%;
-        input, textarea{
-            color: $title;
-            padding-left: 10px;
-            border-radius: 4px;
-            outline: none;
-            border:$gray 1px solid;
-        }
-        label:hover{
-            color: $title;
-            cursor: pointer;
-        }
-        input:focus, textarea:focus{
-            background-color: $lightGray;
-        }
-        input::placeholder, textarea::placeholder{
-            color: $lightGray;
-        }
-    }
-    .send{
-        display: flex;
-        padding: 20px;
-        margin-bottom: 20px;
-        flex-direction: row;
-        justify-content: center;
-        input{
-            display: block;
-            padding: 10px 20px;
-            max-width: fit-content !important;
-        }
-        
-    }
-    .send:hover{
-        input{
-            background-color: $gray;
-            color: $buttonText;
-        }
-    }
-}
+form {
+  background-color: $lightBackground;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 4px 0px $boxShadow;
+  fieldset {
+    width: 80%;
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
 
-@media screen and (min-width: 1024px) {
-    form{
-        div{
-
-        }
+      input,
+      textarea {
+        color: $title;
+        padding-left: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: $gray 1px solid;
+      }
+      label:hover {
+        color: $title;
+        cursor: pointer;
+      }
+      input:focus,
+      textarea:focus {
+        background-color: $lightGray;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: $lightGray;
+      }
     }
+    .send {
+      display: flex;
+      padding: 20px;
+      margin-bottom: 20px;
+      flex-direction: row;
+      justify-content: center;
+      input {
+        display: block;
+        padding: 10px 20px;
+        max-width: fit-content !important;
+      }
+    }
+    .send:hover {
+      input {
+        background-color: $gray;
+        color: $buttonText;
+      }
+    }
+  }
 }

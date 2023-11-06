@@ -328,46 +328,51 @@ form {
   align-items: center;
   box-shadow: 0 0px 4px 0px #cacaca;
 }
-form div {
+form fieldset {
+  width: 80%;
+}
+form fieldset div {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 80%;
 }
-form div input, form div textarea {
+form fieldset div input,
+form fieldset div textarea {
   color: #333333;
   padding-left: 10px;
   border-radius: 4px;
   outline: none;
   border: #757575 1px solid;
 }
-form div label:hover {
+form fieldset div label:hover {
   color: #333333;
   cursor: pointer;
 }
-form div input:focus, form div textarea:focus {
+form fieldset div input:focus,
+form fieldset div textarea:focus {
   background-color: #cacaca;
 }
-form div input::-moz-placeholder, form div textarea::-moz-placeholder {
+form fieldset div input::-moz-placeholder, form fieldset div textarea::-moz-placeholder {
   color: #cacaca;
 }
-form div input::placeholder, form div textarea::placeholder {
+form fieldset div input::placeholder,
+form fieldset div textarea::placeholder {
   color: #cacaca;
 }
-form .send {
+form fieldset .send {
   display: flex;
   padding: 20px;
   margin-bottom: 20px;
   flex-direction: row;
   justify-content: center;
 }
-form .send input {
+form fieldset .send input {
   display: block;
   padding: 10px 20px;
   max-width: -moz-fit-content !important;
   max-width: fit-content !important;
 }
-form .send:hover input {
+form fieldset .send:hover input {
   background-color: #757575;
   color: #FFFFFF;
 }
